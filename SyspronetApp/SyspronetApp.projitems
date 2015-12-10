@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{930DAF19-C331-4A0D-A63B-53854884BE6B}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SyspronetApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)SyspronetApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WelcomePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HomePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServicesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AboutUsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)customs\CustomImgCellView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)customs\CustomServCellView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)tour\MainTourPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)customs\" />
+    <Folder Include="$(MSBuildThisFileDirectory)tour\" />
+  </ItemGroup>
+</Project>
